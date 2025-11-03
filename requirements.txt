@@ -1,0 +1,17 @@
+# PDF Imposition Tool Requirements
+# Core PDF processing libraries
+PyPDF2>=3.0.0
+reportlab>=4.0.0
+Pillow>=9.0.0
+
+# Optional: For enhanced PDF processing
+# qpdf and poppler are system dependencies, install via:
+# macOS: brew install poppler qpdf pdftk-java
+# Linux: sudo apt-get install poppler-utils qpdf pdftk
+# Windows: Download and install manually
+
+# Development dependencies (uncomment for development)
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=5.0.0
+# mypy>=0.991
