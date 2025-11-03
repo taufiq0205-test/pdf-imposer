@@ -223,9 +223,24 @@ class PDFImposerGUI:
 
 def main():
     """Main function to run the GUI"""
+    print("Starting PDF Imposition GUI...")
+    
     root = tk.Tk()
+    
+    # Force window to be visible and on top
+    root.lift()
+    root.attributes('-topmost', True)
+    root.after_idle(root.attributes, '-topmost', False)
+    root.focus_force()
+    
     app = PDFImposerGUI(root)
+    
+    print("✅ GUI started successfully - window should be visible")
+    print("Close the GUI window to return to terminal")
+    
     root.mainloop()
+    
+    print("✅ GUI closed")
 
 if __name__ == "__main__":
     main()

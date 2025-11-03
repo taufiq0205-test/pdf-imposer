@@ -1,0 +1,18 @@
+{
+  "company": "Your Company Name",
+  "jobs": [
+    {
+      "name": "Sample 8x2 Layout",
+      "input_files": [
+        "sample1.pdf",
+        "sample2.pdf"
+      ],
+      "output_path": "output/sample_imposed.pdf",
+      "layout": "8x2",
+      "paper_size": "A4",
+      "landscape": true,
+      "margin_mm": 5,
+      "dpi": 300
+    }
+  ]
+}

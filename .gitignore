@@ -195,7 +195,8 @@ Charm-56x56mm-Sample/
 # Generated shortcuts
 *.bat
 *.sh
-Company_PDF_Imposer.*
+Company_PDF_Imposer.bat
+Company_PDF_Imposer.sh
 
 # macOS specific
 .DS_Store
