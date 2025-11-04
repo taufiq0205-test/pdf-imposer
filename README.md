@@ -33,16 +33,16 @@ python3 install_company_imposer.py
 
 #### GUI Interface (Recommended)
 ```bash
-python3 gui_imposer.py
+python3 main.py
 ```
 
 #### Command Line
 ```bash
 # Basic 8×2 layout (8 horizontal, 2 vertical)
-python3 company_pdf_imposer.py --input file1.pdf file2.pdf --output result.pdf --layout 8x2
+python3 main.py --cli --input file1.pdf file2.pdf --output result.pdf --layout 8x2
 
 # Custom settings
-python3 company_pdf_imposer.py \
+python3 main.py --cli \
   --input *.pdf \
   --output imposed.pdf \
   --layout 4up \
@@ -76,13 +76,13 @@ Powerful CLI for automation and batch processing:
 
 ```bash
 # Show available options
-python3 company_pdf_imposer.py --help
+python3 main.py --cli --help
 
 # List all layouts
-python3 company_pdf_imposer.py --list-layouts
+python3 main.py --cli --list-layouts
 
 # Batch processing
-python3 company_pdf_imposer.py --batch production_config.json
+python3 main.py --cli --batch production_config.json
 ```
 
 ## 📦 Batch Processing
@@ -119,7 +119,7 @@ Create a JSON configuration file for automated workflows:
 
 Run batch processing:
 ```bash
-python3 company_pdf_imposer.py --batch config.json
+python3 main.py --cli --batch config.json
 ```
 
 ## 🛠️ Technical Details
@@ -157,12 +157,12 @@ python3 company_pdf_imposer.py --batch config.json
 ### Command Line Options
 
 ```bash
-python3 company_pdf_imposer.py [OPTIONS]
+python3 main.py --cli [OPTIONS]
 
 Options:
   --input FILES         Input PDF files (space-separated)
   --output FILE         Output PDF file path
-  --layout LAYOUT       Layout type (2up, 4up, 8up, 8x2, 16up)
+  --layout LAYOUT       Layout type (2up, 4up, 8up, 8x2, 16up, 4up_dup)
   --paper SIZE          Paper size (A4, A3, A2, A1, Letter, Legal, Tabloid)
   --margin MM           Margin in millimeters (default: 5)
   --dpi DPI             Image resolution (default: 300)
